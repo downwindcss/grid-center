@@ -1,6 +1,6 @@
 {
 	"name": "@downwindcss/grid-center",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"license": "MIT",
 	"author": "dance2die",
 	"module": "dist/grid-center.esm.js",
@@ -10,7 +10,10 @@
 		"type": "git",
 		"url": "https://github.com/downwindcss/grid-center.git"
 	},
-	"files": [ "dist", "src" ],
+	"files": [
+		"dist",
+		"src"
+	],
 	"engines": {
 		"node": ">=10"
 	},
