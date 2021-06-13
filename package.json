@@ -6,10 +6,11 @@
 	"module": "dist/grid-center.esm.js",
 	"main": "dist/index.js",
 	"typings": "dist/index.d.ts",
-	"files": [
-		"dist",
-		"src"
-	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/downwindcss/grid-center.git"
+	},
+	"files": [ "dist", "src" ],
 	"engines": {
 		"node": ">=10"
 	},
