@@ -1,0 +1,59 @@
+{
+	"name": "@downwindcss/grid-center",
+	"version": "0.0.1",
+	"license": "MIT",
+	"author": "dance2die",
+	"module": "dist/grid-center.esm.js",
+	"main": "dist/index.js",
+	"typings": "dist/index.d.ts",
+	"files": [ "dist", "src" ],
+	"engines": {
+		"node": ">=10"
+	},
+	"scripts": {
+		"start": "tsdx watch",
+		"build": "tsdx build",
+		"test": "tsdx test",
+		"lint": "tsdx lint",
+		"prepare": "tsdx build",
+		"size": "size-limit",
+		"analyze": "size-limit --why",
+		"version:alpha": "pnpm version prerelease --preid=alpha",
+		"publish:alpha": "pnpm publish --tag alpha",
+		"version:beta": "pnpm version prerelease --preid=beta",
+		"publish:beta": "pnpm publish --tag beta"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"peerDependencies": {},
+	"husky": {
+		"hooks": {
+			"pre-commit": "tsdx lint"
+		}
+	},
+	"prettier": {
+		"printWidth": 80,
+		"semi": true,
+		"singleQuote": true,
+		"trailingComma": "es5"
+	},
+	"size-limit": [
+		{
+			"path": "dist/grid-center.cjs.production.min.js",
+			"limit": "10 KB"
+		},
+		{
+			"path": "dist/grid-center.esm.js",
+			"limit": "10 KB"
+		}
+	],
+	"devDependencies": {
+		"@size-limit/preset-small-lib": "^4.12.0",
+		"husky": "^6.0.0",
+		"size-limit": "^4.12.0",
+		"tsdx": "^0.14.1",
+		"tslib": "^2.3.0",
+		"typescript": "^4.3.2"
+	}
+}
