@@ -1,4 +1,4 @@
-v# @downwindcss/grid-center
+# @downwindcss/grid-center
 
 Tailwind CSS utilities for placing items.
 
