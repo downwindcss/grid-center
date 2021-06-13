@@ -1,4 +1,4 @@
-const plugin = require('tailwindcss/plugin')
+const plugin = require('tailwindcss/plugin');
 
 function gridCenter({ addUtilities }: { addUtilities: any }) {
   const utilities = {
@@ -18,10 +18,10 @@ function gridCenter({ addUtilities }: { addUtilities: any }) {
       display: 'grid',
       'place-items': 'stretch',
     },
-  }
+  };
   // Same as 'place-items': https://tailwindcss.com/docs/place-items#variants
-  const variants = ['responsive']
-  addUtilities(utilities, { variants })
+  const variants = ['responsive'];
+  addUtilities(utilities, { variants });
 }
 
 export default plugin(gridCenter);
