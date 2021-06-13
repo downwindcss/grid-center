@@ -1,7 +1,5 @@
-import { sum } from '../src';
+import postcss from 'postcss';
+import tailwindcss from 'tailwindcss';
+import { TailwindConfig } from 'tailwindcss/tailwind-config';
+import gridCenterPlugin from '../src/gridCenter';
 
-describe('blah', () => {
-  it('works', () => {
-    expect(sum(1, 1)).toEqual(2);
-  });
-});
